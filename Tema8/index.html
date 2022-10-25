@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 8</title>
+  </head>
+  <body>
+    <h1>Tema 8</h1>
+
+    <script>
+      class Persona {
+        constructor(edad, nombre, telefono) {
+          this.edad = edad;
+          this.nombre = nombre;
+          this.telefono = telefono;
+        }
+      }
+
+      let persona = new Persona();
+      persona = {
+        edad: 30,
+        nombre: "Talita",
+        telefono: 3334,
+
+        set setEdad(setEdad) {
+          this.edad = setEdad;
+        },
+
+        set setNombre(setNombre) {
+          this.nombre = setNombre;
+        },
+
+        set setTelefono(setTelefono) {
+          this.telefono = setTelefono;
+        },
+
+        get getEdad() {
+          return this.edad;
+        },
+
+        get getNombre() {
+          return this.nombre;
+        },
+        get getTelefono() {
+          return this.telefono;
+        },
+      };
+
+      persona.setEdad = 42;
+      persona.setNombre = "José";
+      persona.setTelefono = 0909;
+
+      console.log(persona.edad);
+      console.log(persona.nombre);
+      console.log(persona.telefono);
+    </script>
+  </body>
+</html>
