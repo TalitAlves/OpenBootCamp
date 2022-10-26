@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 9</title>
+  </head>
+  <body>
+    <h1>Tema 9</h1>
+
+    <script>
+      class Persona {
+        constructor(edad, nombre, telefono) {
+          this.edad = edad;
+          this.nombre = nombre;
+          this.telefono = telefono;
+        }
+      }
+
+      class Cliente extends Persona {
+        credito() {}
+      }
+
+      let cliente = new Cliente();
+      cliente = {
+        edad: 45,
+        nombre: "José",
+        telefono: 5678,
+        credito: "Aprovado",
+      };
+
+      class Trabajador extends Persona {
+        salario() {}
+      }
+
+      let trabajador = new Trabajador();
+      trabajador = {
+        edad: 18,
+        nombre: "Amanda",
+        telefono: 9900,
+        salario: "$12.000",
+      };
+
+      console.log(cliente);
+      console.log(trabajador);
+    </script>
+  </body>
+</html>
