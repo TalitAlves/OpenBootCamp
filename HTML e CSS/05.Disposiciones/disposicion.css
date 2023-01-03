@@ -1,0 +1,32 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+.fotos{
+    display: flexbox;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+
+
+}
+.header{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    color: red;
+    
+    
+}

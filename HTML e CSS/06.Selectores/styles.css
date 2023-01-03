@@ -1,0 +1,19 @@
+button:hover{
+    background-color: rgb(54, 223, 152);
+    color: white;
+    text-decoration: underline;
+    
+
+}
+button::before{
+    content: "Passa";
+}
+button::after{
+    content:" Hecho!";
+}
+
+button{
+    transition: all 0.1s ease-in-out;
+    padding: 15px;
+
+}
